@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocket Sampler Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/lamejs@1.2.1/lame.min.js"></script>
+</head>
+<body>
+
+    <div class="header">
+        <h1>SAMPLR_9000</h1>
+        
+        <div class="status-bar" id="statusMsg">Ready to Jam</div>
+
+        <div class="controls">
+            <button id="playBtn">▶ PLAY</button>
+            <button id="stopBtn">■ STOP</button>
+            
+            <div class="slide-container">
+                <input type="range" id="tempo" min="60" max="240" value="120">
+                <span id="tempoVal">120 BPM</span>
+            </div>
+
+            <div class="export-group">
+                <select id="formatSelect">
+                    <option value="webm">.webm (Fast)</option>
+                    <option value="mp3">.mp3 (Universal)</option>
+                    <option value="wav">.wav (High Qual)</option>
+                </select>
+                <button id="exportBtn" class="save-btn">⇩ EXPORT</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-container" id="grid">
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
